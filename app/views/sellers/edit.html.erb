@@ -1,0 +1,12 @@
+<%= form_for @seller do |f| %>
+<%= f.label :商家名称 %>
+<%= f.text_field :name %>
+<%= f.label :配送费 %>
+<%= f.text_field :delivery_cost %>
+<%= f.label :起送费 %>
+<%= f.text_field :starting_price %>
+<%= f.label :配送范围 %>
+<%= f.text_field :delivery_scope %>
+
+<%= f.submit "更新商家" %>
+<% end %>

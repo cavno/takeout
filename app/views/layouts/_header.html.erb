@@ -1,0 +1,11 @@
+<h>logo</h>
+<% if signed_in? %> 
+<%= link_to '首页', root_path %>
+<%= link_to '用户', users_path %>
+<%= link_to '设置', edit_user_path(current_user) %>
+<%= link_to '退出', signout_path, method:"delete" %>
+<% else %>
+<%= link_to 'home', root_path %>
+<%= link_to '注册', signup_path %>
+<%= link_to '登录', signin_path %>
+<% end %>

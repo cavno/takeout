@@ -1,6 +1,7 @@
 Takeout::Application.routes.draw do
 
 	get "carts/index"
+	get 'tags/:tag', to:'products#index', as: :tag
 	resources :line_items
 
 

@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org/'
 
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.0.4'
@@ -7,6 +7,9 @@ gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'paperclip', '3.4.2'
+gem 'acts-as-taggable-on', '2.4.1'
+gem 'kissy-rails', '0.0.2'
+
 
 group :development,:test do
 	gem 'sqlite3','1.3.5'

@@ -3,6 +3,8 @@
 <%= f.text_field :title %>
 <%= f.label :商品详情 %>
 <%= f.text_area :description, rows:6 %>
+<%= f.label :tag_list, "Tags:(seber by comma)"%>
+<%= f.text_field :tag_list %>
 <%= f.label :价格 %>
 <%= f.text_field :price %>
 <%= f.file_field :avatar %>

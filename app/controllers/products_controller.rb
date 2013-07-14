@@ -14,7 +14,11 @@ class ProductsController < ApplicationController
 	end
 
 	def index
-		@products = Product.all
+		if params[:tag]
+			@products = Product.tagged_with(params[:tag])
+		else
+			@products = Product.all
+		end
 	end
 
 	def show
